@@ -12,6 +12,7 @@ public class Grupo
     /**
      * busca un espacio disponible en el arreglo.
      * regresa @return una posicion nula en el arreglo.
+     * o -1 si no hay espacio dispo
      * 
      */
     private int buscaEspacioDip()
