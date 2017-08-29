@@ -16,4 +16,10 @@ public class Estudiante
         return "clave:"+clave+"Estudiante: "+nombre;
         
     }
+    
+    public int Darclave()
+    {
+        //se regresa la clave para poder checar en el dar de baja ya que no es un metodo si no una variable.
+        return clave;
+    }
 }

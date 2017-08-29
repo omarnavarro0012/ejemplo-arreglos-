@@ -8,12 +8,27 @@ public class Grupo
         estudiantes= new Estudiante[totalEstudiantes];
         this.nombreMateria=nomMateria;
     }
-    //terminar de tarea este metodo
+    
     public void inscribir(Estudiante unestudiante)
     {
-        if (estudiantes[0]==null)
+        for (int i=0;i<estudiantes.length;i++)
         {
-        estudiantes[0]=unestudiante;
+            if (estudiantes[i]==null)
+            {
+                estudiantes[i]=unestudiante;
+                break;
+            }
+        }
+    }
+    public void darBaja(int claveAlum)
+    {
+        for (int i=0;i<estudiantes.length;i++)
+        {
+            if(claveAlum==estudiantes[i].Darclave())
+            {
+                estudiantes[i]=null;
+                break;
+            }
         }
     }
 }
